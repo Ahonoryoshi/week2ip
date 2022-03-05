@@ -16,4 +16,7 @@ while(m<1 || m>12){
 let d=parseInt(prompt("Enter the 'DAY' of the month you were born"));
 while(d<1 || d>31){
     alert("Please enter a valid day. MUST be an integer, at least 1 and at most 31")
+    d=parseInt(prompt("Enter the 'DAY' of the month you were born"));
 }
+let win=(((d+Math.floor(2.6*m-0.2)-2*c+y+Math.floor(c/4)+Math.floor(y/4)+2)%7)+7)%7;
+
