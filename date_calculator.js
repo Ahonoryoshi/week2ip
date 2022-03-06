@@ -27,35 +27,32 @@ while(d<1 || d>31)
     }
 
 let gen=prompt("Are you male or female? Type either 'male' or 'female' without quotes");
-while (gen !==male && gen !==female)
+while (gen !=="male" && gen !=="female")
     {
-        alert("Please enter a valid gender. MUST be either 'male' or 'female' without quotes and in lowercase")
-        gen=prompt("Are you male or female? Type either 'male' or 'female' without quotes");
+        alert("Please enter a valid gender. MUST be either 'male' or 'female' without quotes and in lowercase");
+        gen=prompt("Are you male or female? Type either 'male' or 'female' without quotes")
     }
-
-let win=(((d+Math.floor(2.6*m-0.2)-2*c+y+Math.floor(c/4)+Math.floor(y/4)+2)%7)+7)%7;
-
-let nm="";
-let dy="";
-
+let win=(d+ Math.floor(2.6*m-0.2) - 2*c + y + Math.floor(c/4) + Math.floor(y/4)+2) % 7;
+let nm=""
+let dy=""
 if (gen==="male")
     {
         if(win===0){nm="Kwasi"; dy="Sunday";}
-        else if(win===1){nm="Kwadwo"; dy="Monday";}
-        else if(win===2){nm="Kwabena"; dy="Tuesday";}
-        else if(win===3){nm="Kwaku"; dy="Wednesday";}
-        else if(win===4){nm="Yaw"; dy="Thursday";}
-        else if(win===5){nm="Kofi"; dy="Friday";}
+        else if(win===1 || win===-6){nm="Kwadwo"; dy="Monday";}
+        else if(win===2 || win===-5){nm="Kwabena"; dy="Tuesday";}
+        else if(win===3 || win===-4){nm="Kwaku"; dy="Wednesday";}
+        else if(win===4 || win===-3){nm="Yaw"; dy="Thursday";}
+        else if(win===5 || win===-2){nm="Kofi"; dy="Friday";}
         else{nm="Kwame"; dy="Saturday";}
     }
 else
     {
         if(win===0){nm="Akosua"; dy="Sunday";}
-        else if(win===1){nm="Adwoa"; dy="Monday";}
-        else if(win===2){nm="Abenaa"; dy="Tuesday";}
-        else if(win===3){nm="Akua"; dy="Wednesday";}
-        else if(win===4){nm="Yaa"; dy="Thursday";}
-        else if(win===5){nm="Afua"; dy="Friday";}
+        else if(win===1 || win===-6){nm="Adwoa"; dy="Monday";}
+        else if(win===2 || win===-5){nm="Abenaa"; dy="Tuesday";}
+        else if(win===3 || win===-4){nm="Akua"; dy="Wednesday";}
+        else if(win===4 || win===-3){nm="Yaa"; dy="Thursday";}
+        else if(win===5 || win===-2){nm="Afua"; dy="Friday";}
         else{nm="Ama"; dy="Saturday";} 
     }
-alert("You were born on a " + dy + ", so your name is " + nm + "!")
+alert("You were born on a " + dy + ", so your name is " + nm + "!");
