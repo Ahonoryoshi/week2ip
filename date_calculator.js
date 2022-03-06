@@ -38,21 +38,23 @@ let win=(((d+Math.floor(2.6*m-0.2)-2*c+y+Math.floor(c/4)+Math.floor(y/4)+2)%7)+7
 let nm="";
 let dy="";
 
-if (gen==="male"){
-    if(win===0){nm=""; dy="Sunday";}
-    else if(win===1){nm=""; dy="Monday";}
-    else if(win===2){nm=""; dy="Tuesday";}
-    else if(win===3){nm=""; dy="Wednesday";}
-    else if(win===4){nm=""; dy="Thursday";}
-    else if(win===5){nm=""; dy="Friday";}
-    else{nm=""; dy="Saturday";}
-}
-else{
-    if(win===0){nm=""; dy="Sunday";}
-    else if(win===1){nm=""; dy="Monday";}
-    else if(win===2){nm=""; dy="Tuesday";}
-    else if(win===3){nm=""; dy="Wednesday";}
-    else if(win===4){nm=""; dy="Thursday";}
-    else if(win===5){nm=""; dy="Friday";}
-    else{nm=""; dy="Saturday";} 
-}
+if (gen==="male")
+    {
+        if(win===0){nm="Kwasi"; dy="Sunday";}
+        else if(win===1){nm="Kwadwo"; dy="Monday";}
+        else if(win===2){nm="Kwabena"; dy="Tuesday";}
+        else if(win===3){nm="Kwaku"; dy="Wednesday";}
+        else if(win===4){nm="Yaw"; dy="Thursday";}
+        else if(win===5){nm="Kofi"; dy="Friday";}
+        else{nm="Kwame"; dy="Saturday";}
+    }
+else
+    {
+        if(win===0){nm=""; dy="Sunday";}
+        else if(win===1){nm=""; dy="Monday";}
+        else if(win===2){nm=""; dy="Tuesday";}
+        else if(win===3){nm=""; dy="Wednesday";}
+        else if(win===4){nm=""; dy="Thursday";}
+        else if(win===5){nm=""; dy="Friday";}
+        else{nm=""; dy="Saturday";} 
+    }
