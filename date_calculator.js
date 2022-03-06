@@ -19,7 +19,7 @@ while(m<1 || m>12)
         m=parseInt(prompt("Enter the 'MONTH' number you were born"));
     }
 
-let d=parseInt(prompt("Enter the 'DAY' of the month you were born"));
+let d=parseInt(prompt("Enter the 'DATE' of the month you were born: Can be from 1 through 31"));
 while(d<1 || d>31)
     {
         alert("Please enter a valid day. MUST be an integer, at least 1 and at most 31")
