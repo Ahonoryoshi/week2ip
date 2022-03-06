@@ -1,32 +1,40 @@
 let c=parseInt(prompt("Enter the 'FIRST TWO DIGITS' of the year you were born"));
-while(c<16 || c>99)
+let cRange= Array.from({length:99}, (_, index) => index + 1);
+while(cRange.includes(c)===false)
     {
         alert("Please enter a valid number. MUST be an integer, at least 16 and at most 99");
         c=parseInt(prompt("Enter the 'FIRST TWO DIGITS' of the year you were born"));
     }
 
+
 let y=parseInt(prompt("Enter the 'LAST TWO DIGITS' of the year youy were born"));
-while(y<0 || y>99)
+let yRange=Array.from({length:99}, (_, index) => index + 1);
+while(cRange.includes(y)===false)
     {
         alert("Please enter a valid year. MUST be an integer, at least 0 and at most 99");
         y=parseInt(prompt("Enter the 'LAST TWO DIGITS' of the year youy were born"));
     }
 
+
 let m=parseInt(prompt("Enter the 'MONTH' number you were born"));
-while(m<1 || m>12)
+let mRange=Array.from({length:12}, (_, index) => index + 1);
+while(cRange.includes(y)===false)
     {
         alert("Please enter a valid month. MUST be an integer, at least 1 and at most 12");
         m=parseInt(prompt("Enter the 'MONTH' number you were born"));
     }
-let N=1
-let dayRange= Array.from({length: N}, (_, index) => index + 1);
+
+
+let N=31
+let dayRange= Array.from({length:N}, (_, index) => index + 1);
 let longMonths=[1,3,5,7,8,10,12];
 let shortMonths=[4,6,9,11];
 let d=parseInt(prompt("Enter the 'DATE' of the month you were born: Can be from 1 through 31"));
 if (longMonths.includes(m))
     {
         N=31
-        while(d<1 || d>31)
+        dayRange= Array.from({length:N}, (_, index) => index + 1);
+        while(dayRange.includes(d)===false)
         {
             alert("Please enter a valid day. MUST be an integer, at least 1 and at most 31")
             d=parseInt(prompt("Enter the 'DAY' of the month you were born"));
@@ -35,7 +43,8 @@ if (longMonths.includes(m))
 else if(shortMonths.includes(m))
     {
         N=30
-        while(d<1 || d>30)
+        dayRange= Array.from({length:N}, (_, index) => index + 1);
+        while(dayRange.includes(d)===false)
         {
             alert("Please enter a valid day. MUST be an integer, at least 1 and at most 30")
             d=parseInt(prompt("Enter the 'DAY' of the month you were born"));
@@ -48,7 +57,8 @@ else
                 if(c%4===0)
                     {
                         N=29
-                        while(d<1 || d>29)
+                        dayRange= Array.from({length:N}, (_, index) => index + 1);
+                        while(dayRange.includes(d)===false)
                         {
                             alert("Please enter a valid day. MUST be an integer, at least 1 and at most 29, since it is February")
                             d=parseInt(prompt("Enter the 'DAY' of the month you were born"));
@@ -57,7 +67,8 @@ else
                 else
                     {
                         N=28
-                        while(d<1 || d>28)
+                        dayRange= Array.from({length:N}, (_, index) => index + 1);
+                        while(dayRange.includes(d)===false)
                         {
                             alert("Please enter a valid day. MUST be an integer, at least 1 and at most 28, since it is February in an odinary year")
                             d=parseInt(prompt("Enter the 'DAY' of the month you were born"));
@@ -70,7 +81,8 @@ else
             if(y%4===0)
                 {
                     N=29
-                    while(d<1 || d>29)
+                    dayRange= Array.from({length:N}, (_, index) => index + 1);
+                    while(dayRange.includes(d)===false)
                         {
                             alert("Please enter a valid day. MUST be an integer, at least 1 and at most 29, since it is February")
                             d=parseInt(prompt("Enter the 'DAY' of the month you were born"));
@@ -79,7 +91,8 @@ else
             else
                 {
                     N=28
-                    while(d<1 || d>28)
+                    dayRange= Array.from({length:N}, (_, index) => index + 1);
+                    while(dayRange.includes(d)===false)
                         {
                             alert("Please enter a valid day. MUST be an integer, at least 1 and at most 28, since it is February in an odinary year")
                             d=parseInt(prompt("Enter the 'DAY' of the month you were born"));
