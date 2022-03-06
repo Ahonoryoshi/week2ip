@@ -18,7 +18,9 @@ while(m<1 || m>12)
         alert("Please enter a valid month. MUST be an integer, at least 1 and at most 12");
         m=parseInt(prompt("Enter the 'MONTH' number you were born"));
     }
-let longMonths=[1,3,5,7,8,10,12]
+let longMonths=[1,3,5,7,8,10,12];
+let shortMonths=[4,6,9,11];
+
 
 let d=parseInt(prompt("Enter the 'DATE' of the month you were born: Can be from 1 through 31"));
 while(m)
