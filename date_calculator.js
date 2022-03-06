@@ -58,3 +58,4 @@ else
         else if(win===5){nm="Afua"; dy="Friday";}
         else{nm="Ama"; dy="Saturday";} 
     }
+alert("You were born on a " + dy + ", so your name is " + nm + "!")
