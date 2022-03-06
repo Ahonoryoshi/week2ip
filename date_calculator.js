@@ -39,10 +39,44 @@ else if(shortMonths.includes(m))
     }
 else
     {
-        while(d<1 || d>29)
-        {
-            alert("Please enter a valid day. MUST be an integer, at least 1 and at most 29, since it is February")
-            d=parseInt(prompt("Enter the 'DAY' of the month you were born"));
+        if (y===0)
+            {
+                if(c%4===0)
+                    {
+                        while(d<1 || d>29)
+                        {
+                            alert("Please enter a valid day. MUST be an integer, at least 1 and at most 29, since it is February")
+                            d=parseInt(prompt("Enter the 'DAY' of the month you were born"));
+                        }
+                    }
+                else
+                    {
+                        while(d<1 || d>28)
+                        {
+                            alert("Please enter a valid day. MUST be an integer, at least 1 and at most 28, since it is February in an odinary year")
+                            d=parseInt(prompt("Enter the 'DAY' of the month you were born"));
+                        }
+                    }
+                
+            }
+        else
+            {
+            if(y%4===0)
+                {
+                    while(d<1 || d>29)
+                        {
+                            alert("Please enter a valid day. MUST be an integer, at least 1 and at most 29, since it is February")
+                            d=parseInt(prompt("Enter the 'DAY' of the month you were born"));
+                        }
+                }
+            else
+                {
+                    while(d<1 || d>28)
+                        {
+                            alert("Please enter a valid day. MUST be an integer, at least 1 and at most 28, since it is February in an odinary year")
+                            d=parseInt(prompt("Enter the 'DAY' of the month you were born"));
+                        }
+                }
         }
     }
 
