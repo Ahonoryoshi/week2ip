@@ -21,24 +21,30 @@ while(m<1 || m>12)
 let longMonths=[1,3,5,7,8,10,12];
 let shortMonths=[4,6,9,11];
 let d=parseInt(prompt("Enter the 'DATE' of the month you were born: Can be from 1 through 31"));
-if (longMonths.includes(m)){
-    while(d<1 || d>31)
+if (longMonths.includes(m))
     {
-        alert("Please enter a valid day. MUST be an integer, at least 1 and at most 31")
-        d=parseInt(prompt("Enter the 'DAY' of the month you were born"));
+        while(d<1 || d>31)
+        {
+            alert("Please enter a valid day. MUST be an integer, at least 1 and at most 31")
+            d=parseInt(prompt("Enter the 'DAY' of the month you were born"));
+        }
     }
-}
-else if(shortMonths.includes(m)){
-    while(d<1 || d>30)
+else if(shortMonths.includes(m))
     {
-        alert("Please enter a valid day. MUST be an integer, at least 1 and at most 30")
-        d=parseInt(prompt("Enter the 'DAY' of the month you were born"));
+        while(d<1 || d>30)
+        {
+            alert("Please enter a valid day. MUST be an integer, at least 1 and at most 30")
+            d=parseInt(prompt("Enter the 'DAY' of the month you were born"));
+        }
     }
-}
 else
-{
-    
-}
+    {
+        while(d<1 || d>29)
+        {
+            alert("Please enter a valid day. MUST be an integer, at least 1 and at most 29, since it is February")
+            d=parseInt(prompt("Enter the 'DAY' of the month you were born"));
+        }
+    }
 
 let gen=prompt("Are you male or female? Type either 'male' or 'female' without quotes");
 while (gen !=="male" && gen !=="female")
