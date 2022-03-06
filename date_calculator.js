@@ -50,11 +50,11 @@ if (gen==="male")
     }
 else
     {
-        if(win===0){nm=""; dy="Sunday";}
-        else if(win===1){nm=""; dy="Monday";}
-        else if(win===2){nm=""; dy="Tuesday";}
-        else if(win===3){nm=""; dy="Wednesday";}
-        else if(win===4){nm=""; dy="Thursday";}
-        else if(win===5){nm=""; dy="Friday";}
-        else{nm=""; dy="Saturday";} 
+        if(win===0){nm="Akosua"; dy="Sunday";}
+        else if(win===1){nm="Adwoa"; dy="Monday";}
+        else if(win===2){nm="Abenaa"; dy="Tuesday";}
+        else if(win===3){nm="Akua"; dy="Wednesday";}
+        else if(win===4){nm="Yaa"; dy="Thursday";}
+        else if(win===5){nm="Afua"; dy="Friday";}
+        else{nm="Ama"; dy="Saturday";} 
     }
